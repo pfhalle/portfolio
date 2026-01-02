@@ -1,0 +1,64 @@
+:root {
+    --bg-color: #EFEAE4;
+    --text-color: #000000;
+    --primary-font: 'Inter', sans-serif;
+    --heading-font: 'Kapakana', cursive;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    text-align: center;
+    
+}
+
+main {
+    text-align: center;
+    padding: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2, h3 {
+    margin-bottom: 15px; /* Avstand ned til teksten */
+}
+
+p {
+    margin-bottom: 30px; /* Avstand mellom avsnittene */
+    padding: 2em;
+}
+
+
+footer {
+    background-color: #5a4a45; 
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
+    padding: 40px 60px;        /* Gir luft på innsiden */
+}
+
+.footer-logo {
+    height: 80px;             
+    width: auto;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;   
+    gap: 2em;                 
+    text-align: right;        
+}
+
+.footer-text a {
+    color: white;              
+    text-decoration: none;     
+    font-family: sans-serif;   
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;      
+}
+
+.footer-text a:hover {
+    opacity: 0.8;             
+}

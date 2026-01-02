@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* css til header */
+nav {
+    display: flex;
+    justify-content: center; /* Drar alt inn mot midten */
+    align-items: center;     /* Sørger for at tekst og logo flukter i høyden */
+    gap: 40px;               /* HER styrer du avstanden. Prøv 10px eller 15px for å få det tett. */
+    width: 100%;
+    padding: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 12px;         /* Litt mindre tekst ser ofte proffere ut når det er tett */
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;     /* Passer på at teksten ikke hopper til neste linje */
+}
+
+.logo img {
+    height: 80px;            /* Juster høyden så den passer med tekststørrelsen */
+    width: auto;
+}
+
+/* Containeren som holder alt sentrert */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Tekst-etikettene rett over bildet */
+.hero-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* Samme bredde som bildet */
+    max-width: 400px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Selve bilde-boksen */
+.image-wrapper {
+    position: relative; /* Gjør at vi kan plassere knappen "oppå" bildet */
+    width: 100%;
+    padding: 3em;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Pilen i den gjennomsiktige boksen oppå bildet */
+.arrow-btn {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: 1px solid white; /* Den tynne hvite rammen fra bildet ditt */
+    color: white;
+    padding: 8px 35px;
+    font-size: 24px;
+    cursor: pointer;    
+    transition: all 0.3s ease; /* Gjør overgangen myk og behagelig */
+}
+
+
+.arrow-btn:hover {
+    background-color: white;   /* Fyller boksen med hvit farge */
+    color: #3d3d3d;            /* Endrer pilen til mørk så den syns mot hvitt */
+    cursor: pointer;           /* Sørger for at musen ser ut som en hånd */
+}
+
+/* Overskriften "Portfolio" (Script-fonten) */
+.intro-text h1 {
+    font-family: var(--heading-font);
+    font-size: 80px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Brødteksten */
+.intro-text p {
+    text-align: center;
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* De to knappene helt nederst */
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.bottom-nav button {
+    background: #eeebe6; 
+    border: 1px solid #000000;
+    padding: 10px 30px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.bottom-nav button:hover {
+    background-color: white;   
+    color: #000000;           
+    cursor: pointer;           
+}
