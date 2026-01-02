@@ -1,10 +1,8 @@
-const burger = document.getElementById('burger-toggle');
-const menu = document.getElementById('nav-menu');
+const hamMenu = document.querySelector(".ham-menu");
 
-burger.addEventListener('click', () => {
-    // Slår på/av 'active' klassen på menyen så den slider inn
-    menu.classList.toggle('active');
-    
-    // Slår på/av 'open' klassen på burgeren så den blir et kryss
-    burger.classList.toggle('open');
+const offScreenMenu = document.querySelector(".off-screen-menu");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
 });

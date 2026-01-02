@@ -1,0 +1,68 @@
+.section2{
+    text-align: center;
+}
+
+/* .tema-meny{
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    margin-bottom: 50px;
+}
+
+.tema-meny a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.2s;
+} */
+
+
+.button2-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 3em;
+}
+
+.btn2 {
+    background-color: #EFEAE4;
+    /* color: white; */
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    border: 1px solid #4a3e3a;
+    display: inline-block;
+}
+
+.btn2:hover {
+    background-color: #5a4a45; /* Blir litt mørkere når du holder musa over */}
+
+
+section {
+    margin: 0 auto;}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: #6d5b55; /* Den brune fargen fra bildet */
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 14px;
+    border: 1px solid #4a3e3a;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #5a4a45; /* Blir litt mørkere når du holder musa over */}
