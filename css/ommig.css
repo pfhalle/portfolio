@@ -125,7 +125,7 @@ dialog::backdrop {
     cursor: pointer;
     margin-top: 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .knapp-beholder {
         flex-wrap: nowrap; 
         gap: 5em;        

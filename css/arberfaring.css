@@ -1,36 +1,52 @@
 
 
+
 .ramme {
-    border: 5px solid #4B2822; 
-    padding: 30px; 
+    border: 3px solid #4B2822; 
+    padding: 20px; 
     max-width: 800px;
-    margin: 40px auto; 
+    margin: 1px auto; 
     box-sizing: border-box; 
 }
 
 .ramme h3 {
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
+
+.skole {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+
+
+    color: white;             
+    padding: 60px 10%;      
+    width: 100%;               
+    box-sizing: border-box;    
+    text-align: center; 
+}
+
 
 .uio, .ek {
-    border: 5px solid #4B2822; 
-    padding: 40px 30px; 
-    max-width: 800px;
-    margin: 40px auto; 
-    
-    display: flex;
-    flex-direction: column; 
-    align-items: center;   
-    text-align: center;     
-    gap: 20px;
-    box-sizing: border-box;
+    border: 2px solid white;  
+    background-color: #6d5b55; 
+    padding: 20px;
+    max-width: 400px;
+    margin: 0;              
+    color: white;
 }
 
+p{
+    line-height: 1.6;
+    font-size: 13px; 
+}
 .semester{
     color: #4B2822;
     line-height: 1.6;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .billeder-work {
@@ -50,7 +66,7 @@
     object-fit: contain;     
 }
 
-@media (min-width: 1024px){
+@media (min-width: 768px){
     .skole{display: flex;}
    
 }
