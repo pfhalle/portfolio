@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css til headerer min -forside */
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 40px;               
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 19px;        
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;   
+}
+
+.logo img {
+    height: 100px;           
+    width: auto;
+}
+
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.hero-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; 
+    max-width: 400px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.image-wrapper {
+    position: relative; 
+    width: 100%;
+    padding: 3em;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* .arrow-btn {
+    bottom: 50px;
+    margin-bottom: 2em;
+    left: 50%;
+
+    background: transparent;
+    border: 1.5px solid #4B2822; 
+    color: #4B2822;
+    padding: 8px 50px;
+    font-size: 24px;
+    cursor: pointer;    
+    transition: all 0.3s ease; /
+}
+
+
+.arrow-btn:hover {
+    background-color: #4B2822;  
+    color: white;           
+    cursor: pointer;          
+} */
+
+.arrow-btn {
+    /* Disse to er viktige når du bytter fra button til a */
+    display: inline-block;
+    text-decoration: none;
+    
+    bottom: 50px;
+    margin-bottom: 2em;
+    /* Fjernet left: 50% da den krever position: absolute for å virke */
+
+    background: transparent;
+    border: 1.5px solid #4B2822; 
+    color: #4B2822;
+    padding: 8px 50px;
+    font-size: 24px;
+    cursor: pointer;    
+    transition: all 0.3s ease; 
+    text-align: center;
+}
+
+.arrow-btn:hover {
+    background-color: #4B2822;  
+    color: white;           
+}
+
+
+.intro-text h1 {
+    /* font-size: px; */
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.overskrift {
+    position: absolute;
+    top: 60%;               
+    left: 50%;              
+    transform: translate(-50%, -50%); 
+    font-size: 170px;
+    color: white;            
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+h1{
+    font-family: Kapakana;
+    font-weight: 500;
+}
+
+
+.intro-text p {
+    text-align: center;
+    padding: 0 40px;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+
+/* .bottom-nav {
+    background: transparent;
+    position: absolute;
+    bottom: 23%; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px; 
+}
+
+.bottom-nav button {
+    background: transparent;
+    color: white;
+    border: 2px solid #eeebe6;
+    padding: 10px 40px;
+    width: 170px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+
+.bottom-nav button:hover {
+    background-color: white;   
+    color: #4B2822;           
+    cursor: pointer;           
+}
+
+@media (max-width: 1023px) {
+    .overskrift {
+          font-size: 90px;
+    }
+    .bottom-nav button{
+        padding: 5px 20px; 
+    }
+} */
+
+.bottom-nav {
+    background: transparent;
+    position: absolute;
+    bottom: 23%; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px; 
+}
+
+/* Vi har byttet ut .bottom-nav button med .btn-link */
+.bottom-nav .btn-style {
+    background: transparent;
+    color: white;
+    border: 2px solid #eeebe6;
+    padding: 10px 40px;
+    width: 170px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    
+    /* VIKTIG: Legg til disse to for at <a> skal fungere som din gamle button */
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.bottom-nav .btn-style:hover {
+    background-color: white;   
+    color: #4B2822;           
+}
+
+@media (max-width: 1023px) {
+    .overskrift {
+          font-size: 80px;
+    }
+   
+    .bottom-nav .btn-style {
+        padding: 5px 20px; 
+        width: auto; 
+    }
+}

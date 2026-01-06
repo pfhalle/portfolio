@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside</title>
+    <title>Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="stylesheet" href="css/generel.css">
     <link rel="stylesheet" href="css/layout-forside.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/burgermeny.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +18,13 @@
 
 <body>
     <header>
+        <nav class="main-nav">
+            <button id="theme-toggle" class="dark-mode-btn">Dark Mode</button>
+
+            <!-- <div class="ham-menu">
+                <span></span><span></span><span></span>
+            </div> -->
+        </nav>
         <div class="off-screen-menu">
             <ul>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
@@ -45,36 +53,57 @@
             </div>
         </nav>
     </header>
-    <section>
-        <div class="image-wrapper">
-            <img class="hero-img" src="img/ferdiglogo.webp" alt="billede af mig">
 
-            <h1 class="overskrift">Portfolio</h1>
-            <div class="bottom-nav">
-                <a href="ommig.html" class="btn-style">OM MIG</a>
-                <a href="portfolio.html" class="btn-style">PORTFOLIO</a>
+
+
+
+    <h2 class="mineprosjekter">
+        <a href="tema2.html">MINE PROSJEKTER</a>
+    </h2>
+    <h3 class="prosjekt-beskrivelse">
+        Her får du et lille overblikk over de 4 temaene jeg har arbejdet med dette semesteret.
+        Trykk deg inn på knappene under for å lese mer om hva temaet handler om,
+        hvilke oppgaver jeg har løst og hvordan jeg løste dem.
+    </h3>
+    <div class="grid_1-1">
+        <div>
+            <div class="prosjekt-par">
+                <a href="tema2.html" class="btn2">KIKK HER FOR TEMA 2</a>
+                <img src="img/tema3billede.png" alt="bilde 1">
+            </div>
+
+            <div class="prosjekt-par">
+                <a href="tema3.html" class="btn2">KIKK HER FOR TEMA 3</a>
+                <img src="img/tema2.1.png" alt="bilde 1">
             </div>
         </div>
-    </section>
 
-    <section class="intro-text">
+        <div>
+            <div class="prosjekt-par">
+                <a href="tema4.html" class="btn2">KIKK HER FOR TEMA 4</a>
+                <img src="img/tema4billede.png" alt="bilde 2">
+            </div>
 
-        <p>I denne portefølje inviterer jeg dig til at lære mig bedre at kende samt få et indblik i min faglige profil.
-            Her præsenterer jeg den viden og de konkrete færdigheder, jeg har tilegnet mig, og ikke mindst den
-            personlige og faglige læring, jeg har gennemgået i løbet af mit første semester på
-            Multimediedesign-uddannelsen ved Erhvervsakademi København</p>
-    </section>
+            <div class="prosjekt-par">
+                <a href="tema5.html" class="btn2">KIKK HER FOR TEMA 5</a>
+                <div class="bilde-gruppe">
+                    <img src="img/tema5.1billede.png" alt="bilde 5">
+                    <img src="img/tema5billede.png" alt="bilde 5.1">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <a href="tema2.html" class="arrow-btn">→</a>
+
     <footer>
-        <img class="footer-logo" src="img/footerNY.png" alt="footer logo">
+        <img class="footer-logo" src="img/footer.png" alt="footer logo">
         <div class="footer-text">
             <a href="ommig.html">OM MIG</a>
             <a href="portfolio.html">PORTFOLIO</a>
         </div>
     </footer>
-
     <script src="js/burgermeny.js"></script>
 </body>
+
 
 </html>
