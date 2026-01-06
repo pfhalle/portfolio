@@ -5,34 +5,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ommig</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="stylesheet" href="css/generel.css">
     <link rel="stylesheet" href="css/ommig.css">
     <link rel="stylesheet" href="css/layout-forside.css">
+    <link rel="stylesheet" href="css/arberfaring.css">
+    <link rel="stylesheet" href="css/burgermeny.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&display=swap" rel="stylesheet">
 </head>
+
+
+
 
 <body>
     <header>
-        <nav>
-            <a href="tema2.html">PORTFOLIO</a>
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="tema2.html">TEMA 2</a></li>
+                <li><a href="tema3.html">TEMA 3</a></li>
+                <li><a href="tema4.html">TEMA 4</a></li>
+                <li><a href="tema5.html">TEMA 5</a></li>
+                <li><a href="ommig.html">OM MIG</a></li>
+            </ul>
+        </div>
+        <nav class="main-nav">
+            <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+
             <div class="logo">
-                <img src="img/logo2.png" alt="PH Logo">
+                <a href="index.html">
+                    <img src="img/logo2.png" alt="PH Logo">
+                </a>
             </div>
-            <a href="ommig.html">OM MIG</a>
+
+            <a href="ommig.html" class="nav-link">OM MIG</a>
+
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    <img class="om-mig-billede" src="img/meg-kam.png" alt="meg og kam" />
     <div class="hero">
+        <img class="om-mig-billede" src="img/chailatte.webp" alt="meg og kam">
         <div class="om-mig">Om mig</div>
-
     </div>
+    <p class="mig">Mit navn er Pernille Halle. Jeg er 21 år gammel og kommer fra Kristiansand i Norge. Jeg læser
+        Multimediedesign på KEA (1. semester) og arbejder med marketing hos PWR.8 på Østerbro. Jeg har flere års
+        erfaring med sociale medier og har tidligere studeret i Oslo. Lær mig og mine færdigheder bedre at kende
+        herunder.</p>
+
+    <div class="tre-billeder">
+        <div class="knapp-beholder">
+
+            <button type="button" class="bilde-knapp" onclick="document.getElementById('modal-arbeid').showModal()">
+                <img src="img/pwr8.webp" alt="Prosjekt 1">
+                <span>Arbejdserfaring</span>
+            </button>
+
+            <button type="button" class="bilde-knapp" onclick="document.getElementById('modal-utdannelse').showModal()">
+                <img src="img/ek.webp" alt="Prosjekt 2">
+                <span>Utdannelse</span>
+            </button>
+
+            <button type="button" class="bilde-knapp" onclick="document.getElementById('modal-semester').showModal()">
+                <img src="img/jentene.webp" alt="Prosjekt 3">
+                <span>Mitt semester</span>
+            </button>
+
+        </div>
+    </div>
+
+    <dialog id="modal-arbeid">
+        <h3>ARBEJDSERFARING</h3>
+        <div class="ramme">
+
+            <h3>Content Creator hos Tise AS</h3>
+            <p>Oktober 2021 - august 2024
+                Som Content Creator for Tises TikTok-kanal producerede jeg ugentlige videoer med formålet at styrke
+                deres brand
+                blandt unge brugere. Jeg arbejdede både selvstændigt og i teams med hele processen fra idéudvikling
+                til færdig
+                publicering.</p>
+            <h3>Content creator Aurora Verksted</h3>
+            <p>Februar 2025 - pt
+                Jeg er ansat i en projektstilling, hvor jeg hjælper med indhold til virksomhedens sociale medier.
+                Jeg
+                deltager
+                desuden i fotoshoots og assisterer med billedmateriale til deres hjemmeside.</p>
+
+            <h3>Marketing PWR.8 Studio</h3>
+            <p>November 2025 - pt
+                Som studentermedhjælper i marketingafdelingen hos PWR.8 Studio på Østerbro bidrager jeg til at
+                styrke
+                centrets
+                visuelle identitet og medlemsengagement. Mine opgaver indebærer produktion af kreativt indhold til
+                sociale
+                medier samt planlægning og afvikling af diverse events i studiet.</p>
+
+        </div>
+        <div class="billeder-work">
+            <img src="img/tise.png" alt="tise">
+            <img src="img/aurora.png" alt="tise">
+            <img src="img/pwrlogo.png" alt="tise">
+        </div>
+
+
+        <button class="lukk-popover" onclick="this.closest('dialog').close()">Lukk</button>
+    </dialog>
+    <dialog id="modal-utdannelse">
+        <p>
+        <h3>UTDANNING</h3>
+        <div class="skole">
+            <div>
+                <p class="uio">Universitetet i Oslo
+                    Medier og kommunikasjon 1 år</p>
+            </div>
+            <div>
+                <p class="ek">Erhversakademi København
+                    Multimediakomuniksjon</p>
+            </div>
+        </div>
+        <div class="billeder-work">
+            <img src="img/uio.png" alt="uio">
+            <img src="img/eklogo.png" alt="ek">
+        </div>
+        <button class="lukk-popover" onclick="this.closest('dialog').close()">Lukk</button>
+    </dialog>
+
+    <dialog id="modal-semester">
+        <h3>MITT 1. SEMESTER</h3>
+        <p class="semester">Jeg flyttede til København for at studere og blev derfor så glad, da jeg fik beskeden om, at
+            jeg
+            var kommet ind
+            på KEA. Jeg flyttede hertil med mine to veninder, og den ene af dem læser også multimediedesign på et andet
+            hold. Det var grænseoverskridende at tage med til introdagen, men jeg er virkelig glad for, at jeg gjorde
+            det!
+            Mine forventninger til studiet var, at det skulle udfordre mig, og det må jeg sige, at det har gjort. Jeg
+            var
+            nok ikke klar over mængden af kodning, der skulle laves her i første semester, men jeg synes, det er så fedt
+            at
+            kunne udfordre mig selv på den måde. Noget af det sjoveste er helt klart designdelen og det at kunne skabe
+            et
+            visuelt udtryk.
+            Jeg har også været så heldig at få et studiejob inden for marketing hos PWR.8, hvilket jeg synes er vildt
+            spændende. Jeg glæder mig meget til fortsættelsen af studiet og til at se, hvad jeg ellers kommer til at
+            lære.
+        </p>
+        <div class="jentene">
+            <img src="img/hjørne-jentene.png" alt="galleri" />
+        </div>
+        <button class="lukk-popover" onclick="this.closest('dialog').close()">Lukk</button>
+    </dialog>
     <footer>
         <img class="footer-logo" src="img/footer.png" alt="footer logo">
         <div class="footer-text">
-            <a href="#">OM MIG</a>
-            <a href="#">PORTFOLIO</a>
+            <a href="ommig.html">OM MIG</a>
+            <a href="portfolio.html">PORTFOLIO</a>
         </div>
     </footer>
+    <script src="js/burgermeny.js"></script>
 </body>
 
 </html>

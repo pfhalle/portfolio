@@ -1,0 +1,112 @@
+.btn2 {
+
+    background-color: #EFEAE4;
+    color: #4a3e3a;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    font-size: 17px;
+    border: 1.5px solid #4a3e3a;
+
+    box-sizing: border-box;
+    text-align: center;
+    margin: 2em;
+}
+
+.btn2:hover {
+    background-color: #6d5b55;   
+    color: #ffffff;           
+    cursor: pointer;           
+}
+
+.mineprosjekter a{
+    background-color: #6d5b55; 
+    color: white;              
+    padding: 40px 50px;       
+    display: block;           
+    width: 100%;               
+    box-sizing: border-box;   
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.prosjekt-beskrivelse {
+    color: #6d5b55;
+    max-width: 900px;        
+    width: 90%;               
+    margin: 0 auto 40px auto; 
+    
+    text-align: center;
+    padding: 40px 30px;      
+    
+ 
+}
+
+
+/* DARK MODE */
+/* Min standard (Light Mode) farger!! */
+:root {
+    --bg-color: #F2EDE4;    
+    --text-color: #6d5b55;  
+    --btn-bg: #EFEAE4;
+    --btn-border: #4a3e3a;
+}
+
+/* Dark Mode farger hihi*/
+[data-theme="dark"] {
+    --bg-color: #2b2624;    
+    --text-color: #F2EDE4;  
+    --btn-bg: #3d3532;
+    --btn-border: #F2EDE4;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.prosjekt-beskrivelse {
+    color: var(--text-color); 
+}
+
+.btn2 {
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border: 1.9px solid var(--btn-border);
+}
+
+
+
+@media (min-width: 1024px){
+
+.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 60px;                    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid_1-1 div {
+    display: flex;
+    flex-direction: column;        
+    gap: 30px;                     
+    align-items: center;           
+}
+
+.grid_1-1 img {
+    width: 100%;                  
+    height: auto;
+    border-radius: 0;            
+    margin-bottom: 40px;           
+}
+
+.btn2 {
+    width: fit-content;           
+    display: block;
+}
+
+}
+
