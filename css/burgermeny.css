@@ -3,7 +3,7 @@
     display: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
 
 .off-screen-menu {
     background-color: #6d5b55; 

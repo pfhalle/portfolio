@@ -73,7 +73,7 @@ section {
 
 
 
-@media (min-width: 1024px){
+@media (min-width: 768px){
     .btn2 {
         padding: 15px 80px; 
         width: auto;            

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* css til headerer min -forside */
+
 nav {
     display: flex;
     justify-content: center; 
@@ -62,35 +62,14 @@ nav a {
 }
 
 
-/* .arrow-btn {
-    bottom: 50px;
-    margin-bottom: 2em;
-    left: 50%;
-
-    background: transparent;
-    border: 1.5px solid #4B2822; 
-    color: #4B2822;
-    padding: 8px 50px;
-    font-size: 24px;
-    cursor: pointer;    
-    transition: all 0.3s ease; /
-}
-
-
-.arrow-btn:hover {
-    background-color: #4B2822;  
-    color: white;           
-    cursor: pointer;          
-} */
-
 .arrow-btn {
-    /* Disse to er viktige når du bytter fra button til a */
+   
     display: inline-block;
     text-decoration: none;
     
     bottom: 50px;
     margin-bottom: 2em;
-    /* Fjernet left: 50% da den krever position: absolute for å virke */
+  
 
     background: transparent;
     border: 1.5px solid #4B2822; 
@@ -109,7 +88,6 @@ nav a {
 
 
 .intro-text h1 {
-    /* font-size: px; */
     margin-top: 30px;
     text-align: center;
 }
@@ -143,42 +121,6 @@ h1{
 }
 
 
-/* .bottom-nav {
-    background: transparent;
-    position: absolute;
-    bottom: 23%; 
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 50px; 
-}
-
-.bottom-nav button {
-    background: transparent;
-    color: white;
-    border: 2px solid #eeebe6;
-    padding: 10px 40px;
-    width: 170px;
-    cursor: pointer;
-    transition: all 0.3s ease; 
-}
-
-
-.bottom-nav button:hover {
-    background-color: white;   
-    color: #4B2822;           
-    cursor: pointer;           
-}
-
-@media (max-width: 1023px) {
-    .overskrift {
-          font-size: 90px;
-    }
-    .bottom-nav button{
-        padding: 5px 20px; 
-    }
-} */
-
 .bottom-nav {
     background: transparent;
     position: absolute;
@@ -189,7 +131,6 @@ h1{
     gap: 50px; 
 }
 
-/* Vi har byttet ut .bottom-nav button med .btn-link */
 .bottom-nav .btn-style {
     background: transparent;
     color: white;
@@ -199,7 +140,7 @@ h1{
     cursor: pointer;
     transition: all 0.3s ease; 
     
-    /* VIKTIG: Legg til disse to for at <a> skal fungere som din gamle button */
+   
     text-decoration: none;
     display: inline-block;
     text-align: center;
@@ -210,7 +151,7 @@ h1{
     color: #4B2822;           
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
     .overskrift {
           font-size: 80px;
     }

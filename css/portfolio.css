@@ -79,7 +79,7 @@ body {
 
 
 
-@media (min-width: 1024px){
+@media (min-width: 768px){
 
 .grid_1-1 {
     display: grid;
