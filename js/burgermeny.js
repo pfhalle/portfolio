@@ -29,6 +29,6 @@ toggleBtn.addEventListener('click', () => {
     }
     
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme); // Husker valget til neste gang
+    localStorage.setItem('theme', theme);
 });
 
